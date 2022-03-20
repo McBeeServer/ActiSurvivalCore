@@ -3,3 +3,4 @@ version: '${project.version}'
 main: com.metaxcrew.survivalcore.SurvivalCore
 api-version: 1.18
 authors: [ PxLib ]
+softdepend: [PlaceholderAPI]

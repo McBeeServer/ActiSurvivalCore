@@ -2,6 +2,7 @@ package com.metaxcrew.survivalcore.core;
 
 import com.metaxcrew.survivalcore.SurvivalCore;
 import fr.mrmicky.fastboard.FastBoard;
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.Statistic;
@@ -35,7 +36,7 @@ public class ScoreBoard implements Listener {
 
         FastBoard lobbysb = new FastBoard(player);
 
-        lobbysb.updateTitle(ChatColor.of("#0F7AD9") + "" + ChatColor.BOLD + "Survival");
+        lobbysb.updateTitle(ChatColor.of("#DA1D1D") + "" + ChatColor.BOLD + "Survival Season 2");
 
         this.boards.put(player.getUniqueId(), lobbysb);
 
@@ -58,22 +59,19 @@ public class ScoreBoard implements Listener {
     private void updateBoard(FastBoard lobbysb) {
         lobbysb.updateLines(
                 "",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Coin:" + ChatColor.of("#C4CDD6") + " Kingdoms",
+                ChatColor.of("#D54A4A")+""+ChatColor.BOLD + "Personal Stats:",
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Fly: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Kills: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Deaths: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.DEATHS),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Coins: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
                 "",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "ACrytal: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
+                ChatColor.of("#D54A4A")+""+ChatColor.BOLD + "SlimeFun Stats:",
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "XP spend: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%slimefun_researches_total_xp_levels_spent%xp"),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Unlocked: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%slimefun_researches_percentage_researches_unlocked%%"),
                 "",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                "",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                "",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#89B6DE") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                "",
-                ChatColor.of("#0F7AD9") + "" + ChatColor.BOLD + "www.acticraft.net"
+                ChatColor.of("#DA1D1D") + "" + ChatColor.BOLD + "www.acticraft.net");
 
 
-        );
+        ;
     }
 }
