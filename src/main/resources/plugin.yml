@@ -4,3 +4,8 @@ main: com.metaxcrew.survivalcore.SurvivalCore
 api-version: 1.18
 authors: [ PxLib ]
 softdepend: [PlaceholderAPI]
+commands:
+  nv:
+    aliases: [nightvision]
+  hat:
+    aliases: [tohead]

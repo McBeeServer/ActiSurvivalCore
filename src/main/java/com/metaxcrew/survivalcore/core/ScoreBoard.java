@@ -60,7 +60,7 @@ public class ScoreBoard implements Listener {
         lobbysb.updateLines(
                 "",
                 ChatColor.of("#D54A4A")+""+ChatColor.BOLD + "Personal Stats:",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Fly: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "PVP: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Kills: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Deaths: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.DEATHS),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Coins: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
