@@ -16,7 +16,7 @@ public class NightVisionCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("acti.nv")) {
+            if (p.hasPermission("acti.nightvision")) {
 
                 if(p.hasPotionEffect(PotionEffectType.NIGHT_VISION)) {
                     p.removePotionEffect(PotionEffectType.NIGHT_VISION);
