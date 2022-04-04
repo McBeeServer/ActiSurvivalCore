@@ -9,3 +9,5 @@ commands:
     aliases: [nightvision]
   hat:
     aliases: [tohead]
+  ci:
+    aliases: [customitems]

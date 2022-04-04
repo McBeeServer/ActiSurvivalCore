@@ -63,7 +63,7 @@ public class ScoreBoard implements Listener {
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "PVP: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Kills: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Deaths: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.DEATHS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Coins: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Coins: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed% \uE086"),
                 "",
                 ChatColor.of("#D54A4A")+""+ChatColor.BOLD + "SlimeFun Stats:",
                 ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "XP spend: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%slimefun_researches_total_xp_levels_spent%xp"),
